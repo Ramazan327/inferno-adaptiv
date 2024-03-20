@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Jura";
+    transition: .3s;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Regular.ttf);
+    font-weight: 400;
+}
+
+header {
+    height: 100px;
+    background-color: black;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    background-image: url(../image/banner.png);
+    height: 90vh;
+}
+
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    width: 415px;
+    gap: 30px;
+}
+
+.banner_content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.banner_content span {
+    font-size: 64px;
+}
+
+.banner_content button {
+    width: 330px;
+    padding: 20px 90px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.banner_content button:hover {
+    background-color: white;
+    color: black;
+}
+
+.pop_tov {
+    background-color: #EDEDED;
+    padding: 70px 0;
+}
+
+.pop_tov h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.grid_item {
+    width: 300px;
+}
+
+.grid_item h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.tovar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.price_icons p {
+    color: #53377A;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.icons_el {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons_el a:hover {
+    transform: scale(1.1);
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+}
+
+.size a {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    padding: 9px 19px;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+.size a:hover {
+    background-color: black;
+    color: white;
+}
+
+.grid_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.category {
+    padding: 70px 0;
+}
+
+.category h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cat_el_1 {
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    width: 417px;
+    height: 600px;
+    background-image: url(../image/kurtki.png);
+    background-size: contain;
+}
+
+.cat_el_1 button {
+    width: 329px;
+    padding: 20px 120px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+
+.cat_el_1 button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cat_el_2 button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cat_el_3 button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cat_el_2 {
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    width: 417px;
+    height: 600px;
+    background-image: url(../image/shtani.png);
+    background-size: contain;
+}
+
+.cat_el_2 button {
+    width: 329px;
+    padding: 20px 120px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+
+.cat_el_3 {
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    width: 417px;
+    height: 600px;
+    background-image: url(../image/hudi.png);
+    background-size: contain;
+}
+
+.cat_el_3 button {
+    width: 329px;
+    padding: 20px 120px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+
+.cat_els {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 70px 0;
+    background-color: black;
+} 
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+
+.foot_nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.nav_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav_1 a {
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.nav_2 {
+    display: flex;
+    gap: 25px;
+    margin-left: 175px;
+}
+
+.nav_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: right;
+}
+
+.nav_3 p{
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+@media (max-width:500px) {
+    .logo_img {
+        width: 150px;
+        padding-top: 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .fa-solid.fa-bars {
+        display: block;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+
+    .banner_content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .banner_content span {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .banner_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+        gap: 10px;
+        align-items: center;
+        height: 40vh;
+    }
+    .banner_content button {
+        width: 200px;
+        padding: 10px 40px;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .banner {
+        background-image: url(../image/ban_apapt.png);
+        height: 40vh;
+        background-size: cover;
+        
+    }
+
+    .pop_tov h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .grid_items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .category h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .cat_el_1 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 417px;
+        height: 500px;
+        background-image: url(../image/kur.png);
+        background-size: contain;
+        background-size: cover;
+    }
+
+    .cat_el_2 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 417px;
+        height: 500px;
+        background-image: url(../image/shtani_ad.png);
+        background-size: contain;
+        background-size: cover;
+    }
+
+    .cat_el_3 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 417px;
+        height: 500px;
+        background-image: url(../image/hudi.png);
+        background-size: contain;
+        background-size: cover;
+    }
+
+    .cat_els {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .cat_el_1 button {
+        width: 329px;
+        padding: 20px 120px;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        cursor: pointer;
+        
+    }
+
+    .contacts {
+        display: none;
+       
+    }
+
+    .contacts h2 {
+        font-size:20px ;
+
+    }
+
+    .nav_1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .nav_1 a {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .nav_3 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center
+    }
+    
+    .nav_3 p{
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .foot_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav_2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-left: 2px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+

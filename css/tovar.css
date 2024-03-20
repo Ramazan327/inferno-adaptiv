@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Jura";
+    transition: .3s;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-Regular.ttf);
+    font-weight: 400;
+}
+
+header {
+    height: 100px;
+    background-color: black;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+
+section {
+    background-color: #EDEDED;
+    padding: 70px 0;
+}
+
+.tovar {
+    padding: 120px 50px;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+  
+}
+
+.tov_con {
+    width: 300px;
+}
+
+
+.tov_name {
+    font-size: 40px;
+    font-weight: 700;
+    width: 460px;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.tov_price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #53377A;
+    margin-bottom: 40px;
+}
+
+.tov_size {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 56px;
+}
+
+.tov_size a {
+    padding: 15px 30px;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+
+.tov_size a:hover {
+    background-color: black;
+    color: white;
+}
+
+.tov_har {
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 90px;
+}
+
+.tov_btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn1 {
+    padding: 25px 123px;
+    background-color: black;
+    color: white;font-size: 32px;
+    font-weight: 500;
+}
+
+.btn2 {
+    padding: 17px 17px 14px 17px;
+    background-color: black;
+}
+
+.btn1:hover {
+    transform: scale(1.05);
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+}
+
+.crosh {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.crosh a {
+    color: rgb(64, 64, 64);
+}
+
+
+
+.nazad {
+    display: none;
+}
+
+
+
+
+
+
+
+footer {
+    padding: 70px 0;
+    background-color: black;
+} 
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+
+.foot_nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.nav_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav_1 a {
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.nav_2 {
+    display: flex;
+    gap: 25px;
+    margin-left: 175px;
+}
+
+.nav_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: right;
+}
+
+.nav_3 p{
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+@media (max-width:500px) {
+    .logo_img {
+        width: 150px;
+        padding-top: 20px;
+    }
+
+    .tov_name {
+        font-size: 32px;
+        font-weight: 700;
+        width: 350px;
+        color: black;
+        margin-bottom: 24px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .fa-solid.fa-bars {
+        display: block;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+
+    .crosh {
+        display: none;
+    }
+
+    .tovar {
+        flex-wrap: wrap;
+    }
+
+    .tovar img {
+        width: 300px;
+    }
+
+    .tov_size a {
+        padding: 15px;
+        color: black;
+        font-size: 24px;
+        font-weight: 700;
+        border: 1px solid black;
+    }
+
+    .tovar {
+        padding:20px;
+        background-color: white;
+        display: flex;
+        gap: 50px;
+    }
+
+    .pop_tov h1 {
+        display: none;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+       
+    }
+
+    .tov_btn {
+        display: flex;
+        gap: 20px;
+       
+    }
+    
+    .btn1 {
+        padding: 10px;
+        background-color: black;
+        color: white;font-size: 32px;
+        font-weight: 500;
+    }
+
+    .btn2 {
+        padding: 10px;
+        background-color: black;
+    }
+
+    .btn2 img {
+        width: 50px;
+    }
+    .contacts h2 {
+        font-size:20px ;
+
+    }
+
+    .nazad {
+        border: 1pz solid #808080;
+        padding: 20px;
+        color: #808080;
+        display: block;
+    }
+
+
+    .nav_1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .nav_1 a {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .nav_3 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center
+    }
+    
+    .nav_3 p{
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .foot_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav_2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-left: 2px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+
+}
